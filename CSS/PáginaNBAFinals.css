@@ -1,0 +1,47 @@
+html {
+  background-image: url(/Imagenes/fondo-playoff.jpg);
+  background-repeat:no-repeat;
+  background-position-x:center;
+  background-position-y:center; 
+  background-size: cover;
+  background-attachment: fixed; 
+}
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .contenedor {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+        }
+        .columna {
+            flex-basis: calc(100% / 7);
+        }
+        .partido {
+            position: relative;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f2f2f2;
+        }
+        .partido::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 2px;
+            height: 100%;
+            background-color: #ccc;
+            z-index: -1;
+        }
+        .equipo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            background-color: #fff;
+            position: relative;
+            z-index: 1;
+        }        

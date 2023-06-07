@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NBA Playsoffs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/PaginaGames.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script>
+        function search() {
+            var input = document.getElementById("search-input").value.toLowerCase();
+            var resultsContainer = document.getElementById("search-results");
+            var results = document.querySelectorAll("body *");
+
+
+            resultsContainer.innerHTML = "";
+
+            for (var i = 0; i < results.length; i++) {
+                var text = results[i].innerText.toLowerCase();
+                if (text.includes(input)) {
+                    var result = document.createElement("a");
+                    result.innerText = results[i].innerText;
+                    result.href = "#" + i; // Crea un enlace único para cada resultado
+                    results[i].setAttribute("id", i); // Agrega un id único a cada resultado
+                    resultsContainer.appendChild(result);
+                }
+            }
+        }
+    </script>
+  </head>
+  <body>
+    <center><h1>Calendario de la NBA</h1></center><br><br>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Buscar...">
+        <button type="button" onclick="search()">Buscar</button>
+    </div>
+
+    <div class="search-results" id="search-results">
+    </div>
+    <center><h2>Conferencia del Este</h2></center>
+
+    
+ 
+        <table>
+            <tr>
+                <th>Equipo</th>
+                <th>V</th>
+                <th>D</th>
+                <th>%</th>
+                <th>PD</th>
+                <th>Conf</th>
+                <th>Casa</th>
+                <th>Fuera</th>
+                <th>U10</th>
+                <th>Rcha</th>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Bucks.html"><img class="team-logo" src="/Imagenes/bucks.png" alt="Equipo 1"> 1 Bucks</a></td> 
+                <td>58</td>
+                <td>24</td>
+                <td>.707</td>
+                <td>-</td>
+                <td>35-17</td>
+                <td>32-9</td>
+                <td>26-15</td>
+                <td>6-4</td>
+                <td>L2</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Celtics.html"><img class="team-logo" src="/Imagenes/boston.png" alt="Equipo 1"> 2 Celtics</a></td> 
+                <td>57</td>
+                <td>25</td>
+                <td>.695</td>
+                <td>1.0</td>
+                <td>34-18</td>
+                <td>32-9</td>
+                <td>25-16</td>
+                <td>8-2</td>
+                <td>W3</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/76ers.html"><img class="team-logo" src="/Imagenes/76.png" alt="Equipo 1"> 3 76ers</a></td> 
+                <td>54</td>
+                <td>28</td>
+                <td>.659</td>
+                <td>4.0</td>
+                <td>34-18</td>
+                <td>29-12</td>
+                <td>25-16</td>
+                <td>5-5</td>
+                <td>W2</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Cavaliers.html"><img class="team-logo" src="/Imagenes/cleveland.png" alt="Equipo 1"> 4 Cavaliers</a></td> 
+                <td>51</td>
+                <td>31</td>
+                <td>.622</td>
+                <td>7.0</td>
+                <td>34-18</td>
+                <td>31-10</td>
+                <td>20-21</td>
+                <td>7-3</td>
+                <td>L1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Knicks.html"><img class="team-logo" src="/Imagenes/58419cc8a6515b1e0ad75a67.png" alt="Equipo 1"> 5 Knicks</a></td> 
+                <td>47</td>
+                <td>35</td>
+                <td>.573</td>
+                <td>11.0</td>
+                <td>32-20</td>
+                <td>28-18</td>
+                <td>24-17</td>
+                <td>6-4</td>
+                <td>L1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Nets.html"><img class="team-logo" src="/Imagenes/Brooklyn-Nets.png" alt="Equipo 1"> 6 Nets</a></td> 
+                <td>45</td>
+                <td>37</td>
+                <td>.549</td>
+                <td>13.0</td>
+                <td>30-22</td>
+                <td>23-18</td>
+                <td>22-19</td>
+                <td>6-4</td>
+                <td>L1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Hawks.html"><img class="team-logo" src="/Imagenes/atlanta-hawks.png" alt="Equipo 1"> 7 Hawks</a></td> 
+                <td>41</td>
+                <td>41</td>
+                <td>.500</td>
+                <td>17.0</td>
+                <td>26-26</td>
+                <td>24-17</td>
+                <td>17-24</td>
+                <td>5-5</td>
+                <td>L2</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Heat.html"><img class="team-logo" src="/Imagenes/Miami-Heat-Logo-2000-Present.png" alt="Equipo 1"> 8 Heat</a></td> 
+                <td>44</td>
+                <td>38</td>
+                <td>.537</td>
+                <td>14.0</td>
+                <td>24-28</td>
+                <td>27-14</td>
+                <td>17-24</td>
+                <td>6-4</td>
+                <td>W1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Raptors.html"><img class="team-logo" src="/Imagenes/raptors.png" alt="Equipo 1"> 9 Raptors</a></td> 
+                <td>41</td>
+                <td>41</td>
+                <td>.500</td>
+                <td>17.0</td>
+                <td>26-26</td>
+                <td>14-27</td>
+                <td>14-27</td>
+                <td>6-4</td>
+                <td>W1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Bulls.html"><img class="team-logo" src="/Imagenes/bulls.png" alt="Equipo 1"> 10 Bulls</a></td> 
+                <td>40</td>
+                <td>42</td>
+                <td>.488</td>
+                <td>18.0</td>
+                <td>27-25</td>
+                <td>22-19</td>
+                <td>18-23</td>
+                <td>6-4</td>
+                <td>W2</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Pacers.html"><img class="team-logo" src="/Imagenes/indiana-pacers-logo.png" alt="Equipo 1"> 11 Pacers</a></td> 
+                <td>35</td>
+                <td>47</td>
+                <td>.427</td>
+                <td>23.0</td>
+                <td>24-28</td>
+                <td>20-21</td>
+                <td>15-26</td>
+                <td>3-7</td>
+                <td>W1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Wizards.html"><img class="team-logo" src="/Imagenes/Washington-Wizards-symbol.png" alt="Equipo 1"> 12 Wizards</a></td> 
+                <td>35</td>
+                <td>47</td>
+                <td>.427</td>
+                <td>23.0</td>
+                <td>21-31</td>
+                <td>19-22</td>
+                <td>16-25</td>
+                <td>3-7</td>
+                <td>L1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Magic.html"><img class="team-logo" src="/Imagenes/orlando-magic.png" alt="Equipo 1"> 13 Magic</a></td> 
+                <td>34</td>
+                <td>48</td>
+                <td>.415</td>
+                <td>24.0</td>
+                <td>20-32</td>
+                <td>20-21</td>
+                <td>14-27</td>
+                <td>5-5</td>
+                <td>W1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Hornets.html"><img class="team-logo" src="/Imagenes/hornets.png" alt="Equipo 1"> 14 Hornets</a></td> 
+                <td>34</td>
+                <td>48</td>
+                <td>.415</td>
+                <td>24.0</td>
+                <td>20-32</td>
+                <td>20-21</td>
+                <td>14-27</td>
+                <td>5-5</td>
+                <td>W1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Pistons.html"><img class="team-logo" src="/Imagenes/detroit-pistons.png" alt="Equipo 1"> 15 Pistons</a></td> 
+                <td>17</td>
+                <td>65</td>
+                <td>.207</td>
+                <td>41.0</td>
+                <td>8-44</td>
+                <td>9-32</td>
+                <td>8-33</td>
+                <td>1-9</td>
+                <td>L1</td>
+            </tr>
+        </table><br><br>
+        <center><h2>Conferencia del Oeste</h2></center>
+        <table>
+            <tr>
+                <th>Equipo</th>
+                <th>V</th>
+                <th>D</th>
+                <th>%</th>
+                <th>PD</th>
+                <th>Conf</th>
+                <th>Casa</th>
+                <th>Fuera</th>
+                <th>U10</th>
+                <th>Rcha</th>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Bucks.html"><img class="team-logo" src="/Imagenes/Denver_Nuggets.svg.png" alt="Equipo 1"> 1 Nuggets</a></td> 
+                <td>53</td>
+                <td>29</td>
+                <td>.646</td>
+                <td>-</td>
+                <td>34-18</td>
+                <td>34-7</td>
+                <td>19-22</td>
+                <td>5-5</td>
+                <td>W1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Celtics.html"><img class="team-logo" src="/Imagenes/memphis-grizzlies-logo.png" alt="Equipo 1"> 2 Grizzlies</a></td> 
+                <td>51</td>
+                <td>31</td>
+                <td>.622</td>
+                <td>2.0</td>
+                <td>30-22</td>
+                <td>35-6</td>
+                <td>16-25</td>
+                <td>6-4</td>
+                <td>L1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/76ers.html"><img class="team-logo" src="/Imagenes/sacramento-kings-logo.png" alt="Equipo 1"> 3 Kings</a></td> 
+                <td>48</td>
+                <td>34</td>
+                <td>.585</td>
+                <td>5.0</td>
+                <td>32-20</td>
+                <td>23-18</td>
+                <td>25-16</td>
+                <td>5-5</td>
+                <td>L3</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Cavaliers.html"><img class="team-logo" src="/Imagenes/phoenix-suns-logo-0.png" alt="Equipo 1"> 4 Suns</a></td> 
+                <td>45</td>
+                <td>37</td>
+                <td>.549</td>
+                <td>8.0</td>
+                <td>30-22</td>
+                <td>28-13</td>
+                <td>17-24</td>
+                <td>7-3</td>
+                <td>L2</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Knicks.html"><img class="team-logo" src="/Imagenes/la-clippers-logo.png" alt="Equipo 1"> 5 Clippers</a></td> 
+                <td>44</td>
+                <td>38</td>
+                <td>.537</td>
+                <td>9.0</td>
+                <td>27-25</td>
+                <td>23-18</td>
+                <td>21-20</td>
+                <td>6-4</td>
+                <td>W3</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Nets.html"><img class="team-logo" src="/Imagenes/golden.png" alt="Equipo 1"> 6 Warriors</a></td> 
+                <td>44</td>
+                <td>38</td>
+                <td>.537</td>
+                <td>9.0</td>
+                <td>30-22</td>
+                <td>33-8</td>
+                <td>11-30</td>
+                <td>8-2</td>
+                <td>W3</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Hawks.html"><img class="team-logo" src="/Imagenes/lakers.png" alt="Equipo 1"> 7 Lawers</a></td> 
+                <td>43</td>
+                <td>39</td>
+                <td>.524</td>
+                <td>10.0</td>
+                <td>27-25</td>
+                <td>23-18</td>
+                <td>20-21</td>
+                <td>8-2</td>
+                <td>W2</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Heat.html"><img class="team-logo" src="/Imagenes/minnesota-timberwolves.png" alt="Equipo 1"> 8 Timberwolves</a></td> 
+                <td>42</td>
+                <td>40</td>
+                <td>.512</td>
+                <td>11.0</td>
+                <td>29-23</td>
+                <td>22-19</td>
+                <td>20-21</td>
+                <td>7-3</td>
+                <td>W3</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Raptors.html"><img class="team-logo" src="/Imagenes/pelicans.png" alt="Equipo 1"> 9 Pelicans</a></td> 
+                <td>42</td>
+                <td>40</td>
+                <td>.512</td>
+                <td>11.0</td>
+                <td>29-23</td>
+                <td>27-14</td>
+                <td>15-26</td>
+                <td>7-3</td>
+                <td>L1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Bulls.html"><img class="team-logo" src="/Imagenes/oklahoma-city-thunder-logo.png" alt="Equipo 1"> 10 Thunder</a></td> 
+                <td>40</td>
+                <td>42</td>
+                <td>.488</td>
+                <td>13.0</td>
+                <td>25-27</td>
+                <td>24-17</td>
+                <td>16-25</td>
+                <td>4-6</td>
+                <td>W2</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Pacers.html"><img class="team-logo" src="/Imagenes/dallas-mavericks-logo-1.png" alt="Equipo 1"> 11 Mavericks</a></td> 
+                <td>38</td>
+                <td>44</td>
+                <td>.463</td>
+                <td>15.0</td>
+                <td>28-24</td>
+                <td>23-18</td>
+                <td>15-26</td>
+                <td>2-8</td>
+                <td>L2</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Magic.html"><img class="team-logo" src="/Imagenes/utah-jazz.png" alt="Equipo 1"> 12 Jazz</a></td> 
+                <td>37</td>
+                <td>45</td>
+                <td>.451</td>
+                <td>16.0</td>
+                <td>24-28</td>
+                <td>23-18</td>
+                <td>14-27</td>
+                <td>2-8</td>
+                <td>L1</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Hornets.html"><img class="team-logo" src="/Imagenes/portland-trail-blazers-logo.png" alt="Equipo 1"> 13 Trail Blazers</a></td> 
+                <td>33</td>
+                <td>49</td>
+                <td>.402</td>
+                <td>20.0</td>
+                <td>23-29</td>
+                <td>17-24</td>
+                <td>16-25</td>
+                <td>1-9</td>
+                <td>L4</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Pistons.html"><img class="team-logo" src="/Imagenes/houston-rockets-logo-1.png" alt="Equipo 1"> 14 Rockets</a></td> 
+                <td>22</td>
+                <td>60</td>
+                <td>.268</td>
+                <td>31.0</td>
+                <td>12-40</td>
+                <td>14-27</td>
+                <td>8-33</td>
+                <td>4-6</td>
+                <td>W3</td>
+            </tr>
+            <tr>
+                <td><a href="/Teams/HTML/Wizards.html"><img class="team-logo" src="/Imagenes/san-antonio-spurs-logo.png" alt="Equipo 1"> 15 Spurs</a></td> 
+                <td>22</td>
+                <td>60</td>
+                <td>.268</td>
+                <td>31.0</td>
+                <td>10-42</td>
+                <td>14-27</td>
+                <td>8-33</td>
+                <td>3-7</td>
+                <td>W1</td>
+            </tr>
+        </table><br><br>
+        <a id="Finales"></a>
+       <center><h1>Finales de conferencia</h1></center> 
+       <center><h1 id="countdown">00:0:00</h1></center> 
+
+        <script>
+            function startCountdown() {
+              // Establecer la fecha de finalización
+              var countdownDate = new Date("Jun 8, 2023 02:30:00").getTime();
+        
+              // Actualizar el contador cada segundo
+              var countdown = setInterval(function() {
+                // Obtener la fecha y hora actual
+                var now = new Date().getTime();
+        
+                // Calcular la diferencia de tiempo entre ahora y la fecha de finalización
+                var distance = countdownDate - now;
+        
+                // Calculando los días, horas, minutos y segundos restantes
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+                // Mostrar el resultado en el elemento con el id "countdown"
+                document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+        
+                // Si la cuenta regresiva ha terminado, mostrar un mensaje y comenzar con un nuevo tiempo
+                if (distance < 0) {
+                  clearInterval(countdown);
+                  document.getElementById("countdown").innerHTML = "¡Tiempo expirado!";
+        
+                  // Iniciar un nuevo tiempo después de 5 segundos
+                  setTimeout(function() {
+                    startCountdown();
+                  }, 5000);
+                }
+              }, 1000);
+            }
+        
+            // Iniciar la cuenta regresiva al cargar la página
+            startCountdown();
+          </script>
+        <table>
+            <tr>
+                <th>Equipo local</th>
+                <th>Equipo visitante</th>
+                <th>Fecha</th>
+                <th>Hora</th>
+                <th>Resultado</th>
+            </tr></div>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/Denver_Nuggets.svg.png" alt="Equipo 1"> Denver Nuggets</td>
+                <td><img class="team-logo" src="/Imagenes/Miami-Heat-Logo-2000-Present.png" alt="Equipo 2"> Miami Heat</td>
+                <td>2 de junio de 2023</td>
+                <td>02:30</td>
+                <td>104-93</td>
+                <td>1-0</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/Miami-Heat-Logo-2000-Present.png" alt="Equipo 3"> Miami Heat</td>
+                <td><img class="team-logo" src="/Imagenes/Denver_Nuggets.svg.png" alt="Equipo 4"> Denver Nuggets</td>
+                <td>5 de junio de 2023</td>
+                <td>02:00</td>
+                <td>111-108</td>
+                <td>1-1</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/Denver_Nuggets.svg.png" alt="Equipo 1"> Denver Nuggets</td>
+                <td><img class="team-logo" src="/Imagenes/Miami-Heat-Logo-2000-Present.png" alt="Equipo 2"> Miami Heat</td>
+                <td>8 de junio de 2023</td>
+                <td>02:30</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/Miami-Heat-Logo-2000-Present.png" alt="Equipo 3"> Miami Heat</td>
+                <td><img class="team-logo" src="/Imagenes/Denver_Nuggets.svg.png" alt="Equipo 4"> Denver Nuggets</td>
+                <td>10 de junio de 2023</td>
+                <td>02:30</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/Denver_Nuggets.svg.png" alt="Equipo 1"> Denver Nuggets</td>
+                <td><img class="team-logo" src="/Imagenes/Miami-Heat-Logo-2000-Present.png" alt="Equipo 2"> Miami Heat</td>
+                <td>13 de junio de 2023</td>
+                <td>02:30</td>
+            </tr>
+        </table><br><br>
+        
+        <center><h1>Semifinales de conferencia</h1></center>
+        <table>
+            <tr>
+                <th>Equipo local</th>
+                <th>Equipo visitante</th>
+                <th>Resultado</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/Denver_Nuggets.svg.png" alt="Equipo 1"> Denver Nuggets</td>
+                <td><img class="team-logo" src="/Imagenes/phoenix-suns-logo-0.png" alt="Equipo 2"> Phoenix Suns</td>
+                <td>125-107</td>
+                <td>(1-0)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/58419cc8a6515b1e0ad75a67.png" alt="Equipo 1"> New York Nicks</td>
+                <td><img class="team-logo" src="/Imagenes/Miami-Heat-Logo-2000-Present.png" alt="Equipo 2"> Miami Heats</td>
+                <td>101-108</td>
+                <td>(0-1)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/boston.png" alt="Equipo 1"> Boston Celtics</td>
+                <td><img class="team-logo" src="/Imagenes/76.png" alt="Equipo 2"> Philadelphia 76ers</td>
+                <td>115-119</td>
+                <td>(0-1)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/Denver_Nuggets.svg.png" alt="Equipo 1"> Denver Nuggets</td>
+                <td><img class="team-logo" src="/Imagenes/phoenix-suns-logo-0.png" alt="Equipo 2"> Phoenix Suns</td>
+                <td>97-87</td>
+                <td>(2-0)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/58419cc8a6515b1e0ad75a67.png" alt="Equipo 1"> New York Nicks</td>
+                <td><img class="team-logo" src="/Imagenes/Miami-Heat-Logo-2000-Present.png" alt="Equipo 2"> Miami Heats</td>
+                <td>111-105</td>
+                <td>(1-1)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/golden.png" alt="Equipo 1"> Golden State Warriors</td>
+                <td><img class="team-logo" src="/Imagenes/Lakers.png" alt="Equipo 2"> Los Angeles Lakers</td>
+                <td>112-117</td>
+                <td>(1-0)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/boston.png" alt="Equipo 1"> Boston Celtics</td>
+                <td><img class="team-logo" src="/Imagenes/76.png" alt="Equipo 2"> Philadelphia 76ers</td>
+                <td>121-87</td>
+                <td>(1-1)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/golden.png" alt="Equipo 1"> Golden State Warriors</td>
+                <td><img class="team-logo" src="/Imagenes/lakers.png" alt="Equipo 2"> Los Angeles Lakers</td>
+                <td>127-100</td>
+                <td>(1-1)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/76.png" alt="Equipo 1"> Philadelphia 76ers</td>
+                <td><img class="team-logo" src="/Imagenes/boston.png" alt="Equipo 2"> Boston Celtics</td>
+                <td>102-114</td>
+                <td>(1-2)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/phoenix-suns-logo-0.png" alt="Equipo 1"> Phoenix Suns</td>
+                <td><img class="team-logo" src="/Imagenes/Denver_Nuggets.svg.png" alt="Equipo 2"> Denver Nuggets</td>
+                <td>121-114</td>
+                <td>(2-1)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/Miami-Heat-Logo-2000-Present.png" alt="Equipo 1"> Miami Heats</td>
+                <td><img class="team-logo" src="/Imagenes/58419cc8a6515b1e0ad75a67.png" alt="Equipo 2"> New York Nicks</td>
+                <td>105-86</td>
+                <td>(2-1)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/lakers.png" alt="Equipo 1"> Los Angeles Lakers</td>
+                <td><img class="team-logo" src="/Imagenes/golden.png" alt="Equipo 2"> Golden State Warriors</td>
+                <td>127-97</td>
+                <td>(2-1)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/76.png" alt="Equipo 1"> Philadelphia 76ers</td>
+                <td><img class="team-logo" src="/Imagenes/boston.png" alt="Equipo 2"> Boston Celtics</td>
+                <td>116-115</td>
+                <td>(2-2)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/phoenix-suns-logo-0.png" alt="Equipo 1"> Phoenix Suns</td>
+                <td><img class="team-logo" src="/Imagenes/Denver_Nuggets.svg.png" alt="Equipo 2"> Denver Nuggets</td>
+                <td>129-124</td>
+                <td>(2-2)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/Miami-Heat-Logo-2000-Present.png" alt="Equipo 1"> Miami Heats</td>
+                <td><img class="team-logo" src="/Imagenes/58419cc8a6515b1e0ad75a67.png" alt="Equipo 2"> New York Nicks</td>
+                <td>109-101</td>
+                <td>(3-1)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/lakers.png" alt="Equipo 1"> Los Angeles Lakers</td>
+                <td><img class="team-logo" src="/Imagenes/golden.png" alt="Equipo 2"> Golden State Warriors</td>
+                <td>104-101</td>
+                <td>(3-1)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/boston.png" alt="Equipo 1"> Boston Celtics</td>
+                <td><img class="team-logo" src="/Imagenes/76.png" alt="Equipo 2"> Philadelphia 76ers</td>
+                <td>103-115</td>
+                <td>(3-2)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/Denver_Nuggets.svg.png" alt="Equipo 1"> Denver Nuggets</td>
+                <td><img class="team-logo" src="/Imagenes/phoenix-suns-logo-0.png" alt="Equipo 2"> Phoenix Suns</td>
+                <td>118-102</td>
+                <td>(3-2)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/58419cc8a6515b1e0ad75a67.png" alt="Equipo 1"> New York Nicks</td>
+                <td><img class="team-logo" src="/Imagenes/Miami-Heat-Logo-2000-Present.png" alt="Equipo 2"> Miami Heats</td>
+                <td>112-103</td>
+                <td>(3-2)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/golden.png" alt="Equipo 1"> Golden State Warriors</td>
+                <td><img class="team-logo" src="/Imagenes/lakers.png" alt="Equipo 2"> Los Angeles Lakers</td>
+                <td>121-106</td>
+                <td>(3-2)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/76.png" alt="Equipo 1"> Philadelphia 76ers</td>
+                <td><img class="team-logo" src="/Imagenes/boston.png" alt="Equipo 2"> Boston Celtics</td>
+                <td>86-95</td>
+                <td>(3-3)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/phoenix-suns-logo-0.png" alt="Equipo 1"> Phoenix Suns</td>
+                <td><img class="team-logo" src="/Imagenes/Denver_Nuggets.svg.png" alt="Equipo 2"> Denver Nuggets</td>
+                <td>100-125</td>
+                <td>(4-2)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/Miami-Heat-Logo-2000-Present.png" alt="Equipo 1"> Miami Heats</td>
+                <td><img class="team-logo" src="/Imagenes/58419cc8a6515b1e0ad75a67.png" alt="Equipo 2"> New York Nicks</td>
+                <td>96-92</td>
+                <td>(4-2)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/lakers.png" alt="Equipo 1"> Los Angeles Lakers</td>
+                <td><img class="team-logo" src="/Imagenes/golden.png" alt="Equipo 2"> Golden State Warriors</td>
+                <td>122-101</td>
+                <td>(4-2)</td>
+            </tr>
+            <tr>
+                <td><img class="team-logo" src="/Imagenes/boston.png" alt="Equipo 1"> Boston Celtics</td>
+                <td><img class="team-logo" src="/Imagenes/76.png" alt="Equipo 2"> Philadelphia 76ers</td>
+                <td>112-88</td>
+                <td>(4-3)</td>
+            </tr>
+        </table><br><br><br><br>
+    <a href="/HTML/PáginaPlayoffs.html"><img src="/Imagenes/back.png" height="40" width="60"/></a>
+  </body>
+
+</html>

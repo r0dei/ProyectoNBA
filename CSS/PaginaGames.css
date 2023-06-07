@@ -1,0 +1,211 @@
+html{
+    background-color: black;
+    font-family: NBA76ers;
+}
+
+.search-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+  padding: 8px;
+  width: 300px;
+  font-size: 16px;border-radius: 15px;
+
+}
+
+.search-container button {
+  padding: 8px 16px;
+  font-size: 16px;
+  
+  cursor: pointer;border-radius: 15px;
+
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+.search-results a {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 650px; /* Ajusta la altura según el contenido de tu página */
+  background-color: #f8f8f8;
+  background-image: url('/Imagenes/fondo-nba.jpg'); /* Ruta a tu primer fondo de pantalla */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+@font-face {
+  font-family: NBA76ers;
+  src: url('../fonts/nbafont/NBA\ Cavaliers.ttf') format('truetype');
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/Imagenes/fondo-negro.jpg); /* Ruta a tu segundo fondo de pantalla */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  mix-blend-mode: screen; /* Mezcla el fondo2 con el fondo1 */
+  z-index: -1; /* Coloca el overlay detrás del contenido */
+}
+form{
+  font-family: NBA76ers;
+
+}
+.content {
+  padding: 20px;
+  margin-top: 100px; /* Ajusta el margen superior según tus necesidades */
+}
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-family: NBA76ers;
+  font-size: 170px;
+}
+h2{
+  font-family: NBA76ers;
+  font-size: 150px;
+}
+body, h1{
+    color: #ddd;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 90%; 
+  height: 400px;
+}
+
+tr:hover {
+  background-color: white;
+  color: black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    border: #ddd;
+    font-size: 26px;
+    font-family: NBA76ers;
+}
+
+
+.team-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@font-face {
+    font-family: NBA76ers;
+    src: url('../fonts/nbafont/NBA\ Cavaliers.ttf') format('truetype');
+  }
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 20px;
+    border: #ddd 3.5px solid;  
+    color: #ddd;
+    margin: auto;
+    width: 950px;
+    padding: 5px;
+    }
+  
+  .news {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .news img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .news h3 {
+    margin-top: 10px;
+  }
+  
+  .news p {
+    margin-top: 5px;
+  }
+
+  a{
+    color: #ddd;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  a:hover {
+  
+    background-color: transparent;
+    text-decoration: none;
+  }
+  .header {
+    background-color: #000000;
+    text-align: right;
+    color: #ddd;
+  }
+  .topnav {
+  overflow: hidden;
+  background-color: #333;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+
+
+
+
+
+
+  
